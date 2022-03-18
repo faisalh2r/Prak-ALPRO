@@ -11,14 +11,25 @@ int main ()
 	cout<<"======================================="<<endl;
 	cout<<"\nMasukkan bilangan pertama : ";
 	cin>>bilangan_1;
-	cout<<"Pilih Operasi (+) = ";
+	cout<<"Pilih Operasi (+)    = "<<endl;
+	cout<<"Pilih Operasi (-)    = "<<endl;
+	cout<<"Pilih Operasi (x)    = "<<endl;
+	cout<<"Operasi yang dipilih = ";
 	cin>>operasi;
-	cout<<"Masukkan bilangan kedua : ";
+	cout<<"Masukkan bilangan kedua   : ";
 	cin>>bilangan_2;
 	cout<<"\n---------------------------------------"<<endl;
 	switch  (operasi){
 		case '+':
-		cout<<bilangan_1<<" + "<<bilangan_2<<" = "<<bilangan_1+bilangan_2<<endl;
+			cout<<bilangan_1<<" + "<<bilangan_2<<" = "<<bilangan_1+bilangan_2<<endl;
+		break;
+
+		case '-':
+			cout<<bilangan_1<<" + "<<bilangan_2<<" = "<<bilangan_1-bilangan_2<<endl;
+		break;
+
+		case 'x':
+			cout<<bilangan_1<<" x "<<bilangan_2<<" = "<<bilangan_1*bilangan_2<<endl;
 		break;
 		default:	
 		cout<<"Operasi yang anda masukkan salah/Error"<<endl;
