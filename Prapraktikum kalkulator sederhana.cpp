@@ -14,6 +14,7 @@ int main ()
 	cout<<"Pilih Operasi (+)    = "<<endl;
 	cout<<"Pilih Operasi (-)    = "<<endl;
 	cout<<"Pilih Operasi (x)    = "<<endl;
+        cout<<"Pilih Operasi (/)    = "<<endl;
 	cout<<"Operasi yang dipilih = ";
 	cin>>operasi;
 	cout<<"Masukkan bilangan kedua   : ";
@@ -31,6 +32,11 @@ int main ()
 		case 'x':
 			cout<<bilangan_1<<" x "<<bilangan_2<<" = "<<bilangan_1*bilangan_2<<endl;
 		break;
+
+                case '/':
+                        cout<<bilangan_1<<" / "<<bilangan_2<<" = "<<bilangan_1/bilangan_2<<endl;
+                break;
+  
 		default:	
 		cout<<"Operasi yang anda masukkan salah/Error"<<endl;
 	}
